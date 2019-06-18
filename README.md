@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/openusm/openusm/blob/master/images/openusm_logo.png)
 
-A modern approach to DellEMC Server Management, Insight Logs Analytics and Machine Learning solution integrated with monitoring & logging pipeline using Docker, Redfish, Prometheus & [ELK Stack](https://github.com/openusm/openusm/tree/master/logging).
+A modern approach to Server Management, Insight Logs Analytics and Machine Learning solution integrated with monitoring & logging pipeline using Docker, Redfish, Prometheus & [ELK Stack](https://github.com/openusm/openusm/tree/master/logging).
 
 # Highlights
 
@@ -28,7 +28,7 @@ A modern approach to DellEMC Server Management, Insight Logs Analytics and Machi
 
 # How openUSM works?
 
-OpenUSM uses "Container-Per-Server(CPS)" model. For each server management tasks, there are Python-scripts which when executed builds and run Docker containers, uses Redfish API to communicate directly with Dell iDRAC, collects iDRAC/LC logs and pushes it to ELK(Elasticsearch, Logstash & Kibana) stack for further log analytics.For n-number of Dell Servers, the overall iDRAC/LC logs gets collected to centralized ELK stack which again runs as Microservices inside Docker containers. One can easily see iDRAC logs under Kibana UI. OpenUSM uses Prometheus Stack for monitoring System components like GPU/CPU monitoring using NVIDIA-DOCKER & Node Exporter. 
+OpenUSM uses "Container-Per-Server(CPS)" model. For each server management tasks, there are Python-scripts which when executed builds and run Docker containers, uses Redfish API to communicate directly with OOB, collects iDRAC/LC logs and pushes it to ELK(Elasticsearch, Logstash & Kibana) stack for further log analytics.For n-number of Dell Servers, the overall iDRAC/LC logs gets collected to centralized ELK stack which again runs as Microservices inside Docker containers. One can easily see iDRAC logs under Kibana UI. OpenUSM uses Prometheus Stack for monitoring System components like GPU/CPU monitoring using NVIDIA-DOCKER & Node Exporter. 
 
 
 
@@ -129,7 +129,6 @@ OpenUSM is a suite of tools and utilities which configures and manage the lifecy
 
 ## Blogs
 
-[Introducing OpenUSM](http://en.community.dell.com/techcenter/systems-management/w/wiki/12502.introducing-openusm-simplifying-server-management-insight-log-analytics-using-docker-containers)<br>
 [OpenUSM - Let Containers Manage Your datacenter](http://collabnix.com/introducing-openusm-simplifying-server-management-insight-log-analytics-using-docker-containers/)<br>
 
 
@@ -143,4 +142,4 @@ We invite new contributors to contribute towards this project repository. We wou
 
 # Quick Videos/ Resources
 
-[![Pushing iDRAC Logs to ELK Stack](https://github.com/openusm/openusm/blob/master/images/idrac_elk_logs.png)](https://www.youtube.com/watch?v=jbg4gcp0M8M)
+[![Pushing Server Logs to ELK Stack](https://github.com/openusm/openusm/blob/master/images/idrac_elk_logs.png)](https://www.youtube.com/watch?v=jbg4gcp0M8M)
